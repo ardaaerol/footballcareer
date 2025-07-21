@@ -4,7 +4,7 @@ let currentSceneId = "scene1";
 async function loadScenes() {
   const response = await fetch("scenes.json");
   const data = await response.json();
-  scenes = data; // HATASIZ!
+  scenes = data;   // forEach YOK, direk ata!
   loadScene(currentSceneId);
 }
 
@@ -12,11 +12,10 @@ function loadScene(id) {
   const scene = scenes[id];
   currentSceneId = id;
 
-  // Eğer image bir emoji ise, direkt göster.
+  // Görsel gösterme
   if (scene.image && scene.image.length <= 3) {
     document.getElementById("scene-image").innerText = scene.image;
   } else if (scene.image) {
-    // Eğer image bir dosya adıysa, resim olarak göster.
     document.getElementById("scene-image").innerHTML = `<img src="images/${scene.image}" alt="Sahne Görseli" />`;
   }
 
@@ -42,5 +41,4 @@ function loadScene(id) {
   }
 }
 
-// Oyun yüklenince başlat
 loadScenes();
