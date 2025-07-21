@@ -540,3 +540,192 @@ body {
         font-size: 1.8rem;
     }
 }
+
+/* Achievement Notifications */
+.achievement-notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #ffd700, #ffed4e);
+    color: #1a1a1a;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+    z-index: 1000;
+    transform: translateX(350px);
+    transition: transform 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    font-weight: bold;
+}
+
+.achievement-notification.show {
+    transform: translateX(0);
+}
+
+.achievement-notification i {
+    margin-right: 10px;
+    color: #ff6b35;
+}
+
+/* Achievement Items */
+.achievement-item {
+    background: rgba(255, 215, 0, 0.1);
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+/* Final Stats Display */
+.final-stats {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 20px 0;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.final-stats h3 {
+    text-align: center;
+    color: #ffd700;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.final-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.final-stat {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.final-stat .stat-name {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.final-stat .stat-value {
+    color: #ffd700;
+    font-weight: bold;
+}
+
+.achievements-summary {
+    text-align: center;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+}
+
+.achievements-summary h4 {
+    color: #ffd700;
+    margin-bottom: 15px;
+}
+
+.achievement-badge {
+    display: inline-block;
+    background: rgba(255, 215, 0, 0.2);
+    color: #ffd700;
+    padding: 5px 12px;
+    border-radius: 20px;
+    margin: 3px;
+    font-size: 0.85rem;
+    border: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+/* Game Ending Styles */
+.game-ending {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.game-ending h3 {
+    color: #ffd700;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.game-ending p {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+/* History Panel Expanded State */
+.history-panel.expanded {
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.history-entry {
+    padding: 10px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.history-entry:last-child {
+    border-bottom: none;
+}
+
+.history-time {
+    font-size: 0.8rem;
+    color: #cccccc;
+}
+
+.history-title {
+    font-size: 0.9rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Loading Screen Animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading-ball {
+    animation: spin 2s linear infinite;
+}
+
+/* Responsive adjustments for new elements */
+@media (max-width: 768px) {
+    .achievement-notification {
+        right: 10px;
+        left: 10px;
+        transform: translateY(-100px);
+    }
+    
+    .achievement-notification.show {
+        transform: translateY(0);
+    }
+    
+    .final-stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .history-panel.expanded {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        z-index: 1000;
+        overflow-y: auto;
+    }
+}
