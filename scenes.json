@@ -1,203 +1,292 @@
-[
-  {
-    "id": "scene1",
-    "text": "Henüz 17 yaşındasın. İstanbul’da küçük bir kulüp olan Kartalspor’un altyapısında oynuyorsun. Bugün U17 takımıyla sezonun son maçına çıkacaksın. Tribünde İstanbul’daki büyük kulüplerin gözlemcileri olacak. Hazır mısın?",
-    "image": "scene1.png",
+{
+  "scene1": {
+    "title": "Rüyanın Başlangıcı",
+    "text": "17 yaşındasın ve İstanbul'un kenar mahallelerinden birinde yaşıyorsun. Kartalspor'un U17 takımında oynuyorsun. Bugün sezonun en önemli maçı - İstanbul şampiyonluğu için final maçı. Tribünde Galatasaray, Fenerbahçe ve Beşiktaş'ın scout'ları var.",
+    "image": "🏟️",
+    "playerThoughts": "Kalbim çok hızlı atıyor. Bu benim hayatımı değiştirebilir.",
     "options": [
       {
-        "text": "Her şeyimi sahaya koyacağım!",
+        "text": "🔥 Kendime güveniyorum, sahada her şeyimi vereceğim!",
+        "effects": {
+          "skill": 5,
+          "mentality": 10
+        },
         "nextScene": "scene2a"
       },
       {
-        "text": "Gerginim... elimden geleni yaparım",
+        "text": "😰 Çok gerginim, elimden geleni yapmaya çalışırım...",
+        "effects": {
+          "mentality": -5
+        },
         "nextScene": "scene2b"
+      },
+      {
+        "text": "🎯 Soğukkanlı kalıp taktik zekamı kullanacağım",
+        "effects": {
+          "skill": 3,
+          "mentality": 5
+        },
+        "nextScene": "scene2c"
       }
     ]
   },
-  {
-    "id": "scene2a",
-    "text": "Sahaya çıktın ve adeta alev aldın! 2 gol 1 asistle takımını galibiyete taşıdın. Maçtan sonra Galatasaray ve Başakşehir scoutları menajerinle görüşmek istedi.",
-    "image": "scene2a.png",
+  "scene2a": {
+    "title": "Yıldızın Doğuşu",
+    "text": "Harika bir maç çıkardın. 2 gol 1 asistle takımını şampiyon yaptın. Üç büyük kulüp seninle ilgileniyor.",
+    "image": "🌟",
+    "playerThoughts": "Hayalim gerçek oluyor. Şimdi doğru kararı vermeliyim.",
+    "achievements": [
+      "İstanbul U17 Şampiyonu",
+      "Final MVP"
+    ],
     "options": [
       {
-        "text": "Galatasaray ile görüş",
+        "text": "🟡🔴 Galatasaray'ın teklifini dinle",
+        "effects": {
+          "popularity": 15
+        },
         "nextScene": "scene3a"
       },
       {
-        "text": "Başakşehir ile görüş",
+        "text": "💙💛 Fenerbahçe ile görüş",
+        "effects": {
+          "skill": 10
+        },
         "nextScene": "scene3b"
-      }
-    ]
-  },
-  {
-    "id": "scene2b",
-    "text": "Maçta heyecanına yenildin. Sahada silik bir performans gösterdin. Takım kazandı ama sen beklenen etkiyi yaratamadın. Menajerin, 'Yılma, seni hala isteyen kulüpler olabilir' dedi.",
-    "image": "scene2b.png",
-    "options": [
-      {
-        "text": "Moral bozma, antrenmana odaklan",
-        "nextScene": "scene3c"
       },
       {
-        "text": "Kulüp değiştirmeyi düşün",
-        "nextScene": "scene3d"
+        "text": "⚫⚪ Beşiktaş'ı seç",
+        "effects": {
+          "mentality": 8
+        },
+        "nextScene": "scene3c"
       }
     ]
   },
-  {
-    "id": "scene3a",
-    "text": "Florya’da altyapıya katıldın. İlk profesyonel sözleşme teklif edildi.",
-    "image": "scene3a.png",
+  "scene3a": {
+    "title": "Florya Günleri",
+    "text": "Galatasaray altyapısına transfer oldun. İlk profesyonel sözleşmeni imzalama zamanı.",
+    "image": "🟡🔴",
+    "playerThoughts": "Rüyam gerçek oluyor ama mücadele daha yeni başlıyor.",
     "options": [
       {
-        "text": "Kabul et",
+        "text": "📝 Sözleşmeyi imzala",
+        "effects": {
+          "experience": 5
+        },
         "nextScene": "scene4a"
       },
       {
-        "text": "Biraz daha bekle",
+        "text": "⏳ Bir sezon daha Kartalspor'da kal",
+        "effects": {
+          "mentality": 3
+        },
         "nextScene": "scene4b"
       }
     ]
   },
-  {
-    "id": "scene3b",
-    "text": "Modern tesislerde profesyonel hazırlık kampı. Şehir dışı turnuvaya çağrıldın.",
-    "image": "scene3b.png",
+  "scene4a": {
+    "title": "Profesyonel Sözleşme",
+    "text": "Artık profesyonel bir futbolcusun. U19 takımında forma giymeye başladın.",
+    "image": "📄",
+    "playerThoughts": "Hayalimdeki forma sırtımda. Şimdi sahada konuşma zamanı.",
     "options": [
       {
-        "text": "Turnuvaya katıl",
-        "nextScene": "scene4c"
-      },
-      {
-        "text": "Riske girme, altyapıda devam et",
-        "nextScene": "scene4d"
-      }
-    ]
-  },
-  {
-    "id": "scene3c",
-    "text": "1 yıl sonra Türkiye U18 millî takımına çağrıldın.",
-    "image": "scene3c.png",
-    "options": [
-      {
-        "text": "Millî forma için hazırım",
-        "nextScene": "scene4e"
-      },
-      {
-        "text": "Sakatlıktan korkuyorum",
-        "nextScene": "scene4f"
-      }
-    ]
-  },
-  {
-    "id": "scene3d",
-    "text": "Düşük profilli ama sana güvenen bir kulüp olan Sancaktepe FK ile anlaştın.",
-    "image": "scene3d.png",
-    "options": [
-      {
-        "text": "Şansımı burada denemeliyim",
-        "nextScene": "scene4g"
-      },
-      {
-        "text": "Vazgeç, okula ağırlık ver",
-        "nextScene": "sceneEnd_1"
-      }
-    ]
-  },
-  {
-    "id": "scene4a",
-    "text": "Hazırlık maçında gol attın. Teknik direktör sana ligde şans verecek.",
-    "image": "scene4a.png",
-    "options": [
-      {
-        "text": "Sahada agresif oyna",
+        "text": "🏋️‍♂️ Antrenmanlara odaklan",
+        "effects": {
+          "skill": 5
+        },
         "nextScene": "scene5a"
       },
       {
-        "text": "Takım oyununa sadık kal",
+        "text": "🎙️ Sosyal medyada yükselmeye çalış",
+        "effects": {
+          "popularity": 10,
+          "mentality": -3
+        },
         "nextScene": "scene5b"
       }
     ]
   },
-  {
-    "id": "scene4c",
-    "text": "Yurtdışında oynadın, Torino’dan scout geldi.",
-    "image": "scene4c.png",
+  "scene5a": {
+    "title": "A Takıma Yükseliş",
+    "text": "Çalışkanlığın sayesinde A takıma yükseldin. Süper Lig'de ilk maçına çıkıyorsun.",
+    "image": "🚀",
+    "playerThoughts": "Hayatımda ilk kez bu kadar heyecanlıyım. Ama hazır hissediyorum.",
+    "achievements": [
+      "A Takım Debutu"
+    ],
     "options": [
       {
-        "text": "Torino ile temasa geç",
-        "nextScene": "scene5c"
-      },
-      {
-        "text": "Türkiye’de kalmak istiyorum",
-        "nextScene": "scene5d"
-      }
-    ]
-  },
-  {
-    "id": "scene4e",
-    "text": "Hırvatistan maçında ilk 11 başlıyorsun.",
-    "image": "scene4e.png",
-    "options": [
-      {
-        "text": "Gol atmak için risk al",
-        "nextScene": "scene5e"
-      },
-      {
-        "text": "Takımı oynat, liderlik yap",
-        "nextScene": "scene5f"
-      }
-    ]
-  },
-  {
-    "id": "scene5a",
-    "text": "Şampiyonlar Ligi’nde gol attın. Dortmund seni izliyor.",
-    "image": "scene5a.png",
-    "options": [
-      {
-        "text": "Transfer iste",
+        "text": "⚽ Gol atmak için risk al",
+        "effects": {
+          "skill": 10
+        },
         "nextScene": "scene6a"
       },
       {
-        "text": "Galatasaray’da kal, kaptan ol",
+        "text": "📈 Takım oyununa odaklan",
+        "effects": {
+          "mentality": 5
+        },
         "nextScene": "scene6b"
       }
     ]
   },
-  {
-    "id": "scene5c",
-    "text": "İtalya'da adaptasyon sorunu yaşıyorsun.",
-    "image": "scene5c.png",
+  "scene6a": {
+    "title": "Parlayan Yıldız",
+    "text": "İlk maçında gol attın. Avrupa kulüplerinin dikkatini çekmeye başladın.",
+    "image": "✨",
+    "playerThoughts": "Şimdi sıradaki adımı düşünme zamanı. Kalmak mı gitmek mi?",
     "options": [
       {
-        "text": "Dil ve kültürü öğren",
-        "nextScene": "scene6c"
+        "text": "✈️ Avrupa'ya transfer ol",
+        "effects": {
+          "experience": 15
+        },
+        "nextScene": "scene7a"
       },
       {
-        "text": "Menajerinle başka kulüp ara",
-        "nextScene": "scene6d"
+        "text": "🦁 Galatasaray'da kaptan olmak için kal",
+        "effects": {
+          "mentality": 10
+        },
+        "nextScene": "scene7b"
       }
     ]
   },
-  {
-    "id": "scene5e",
-    "text": "Avrupa Şampiyonası’nda gol kralı olma şansın var.",
-    "image": "scene5e.png",
+  "scene7a": {
+    "title": "Avrupa Macerası",
+    "text": "İtalya'nın Atalanta takımına transfer oldun. Farklı bir kültür, farklı bir lig.",
+    "image": "🇮🇹",
+    "playerThoughts": "Zorlanıyorum ama bu seviyede oynamak bir ayrıcalık.",
     "options": [
       {
-        "text": "Bireysel başarıyı hedefle",
-        "nextScene": "scene6e"
+        "text": "🗣️ Dile ve kültüre adapte ol",
+        "effects": {
+          "mentality": 10
+        },
+        "nextScene": "scene8a"
       },
       {
-        "text": "Takım kupayı alsın yeter",
-        "nextScene": "scene6f"
+        "text": "🏃 Yeni bir takıma transfer iste",
+        "effects": {
+          "experience": 5
+        },
+        "nextScene": "scene8b"
       }
     ]
   },
-  {
-    "id": "sceneEnd_1",
-    "text": "Futbolu bıraktın. Hayatını üniversite eğitimi ve farklı bir kariyerle sürdürüyorsun.",
-    "image": "scene_end1.png",
-    "options": []
+  "scene7b": {
+    "title": "Kulübün Efsanesi",
+    "text": "Yıllar boyunca Galatasaray’da oynadın. Kaptan oldun, kupalar kaldırdın.",
+    "image": "🏆",
+    "playerThoughts": "Bu kulüpte futbolu bırakmak onur olur.",
+    "options": [
+      {
+        "text": "📌 Emeklilik zamanı",
+        "effects": {},
+        "nextScene": "sceneEnd1"
+      },
+      {
+        "text": "🔁 Avrupa’da son bir macera",
+        "effects": {
+          "experience": 10
+        },
+        "nextScene": "scene7a"
+      }
+    ]
+  },
+  "scene8a": {
+    "title": "Başarıya Uyum",
+    "text": "Ligde yılın oyuncusu seçildin. Artık dünya seni konuşuyor.",
+    "image": "🌍",
+    "achievements": [
+      "Yılın Oyuncusu",
+      "Serie A Gol Kralı"
+    ],
+    "playerThoughts": "Futbolun zirvesindeyim. Ne zaman bırakmalıyım?",
+    "options": [
+      {
+        "text": "📌 Şimdi zirvede bırak",
+        "effects": {},
+        "nextScene": "sceneEnd2"
+      },
+      {
+        "text": "📣 Medya yüzü ol, marka yarat",
+        "effects": {
+          "popularity": 15
+        },
+        "nextScene": "scene8c"
+      }
+    ]
+  },
+  "scene8b": {
+    "title": "Transfer Dalgası",
+    "text": "Bir kulüpten diğerine sürüklendin. Formunu bulmakta zorlandın.",
+    "image": "🌊",
+    "playerThoughts": "Her şey çok hızlı gelişti. Artık durulmam gerek.",
+    "options": [
+      {
+        "text": "🧘 Emeklilik",
+        "effects": {},
+        "nextScene": "sceneEnd3"
+      },
+      {
+        "text": "🔁 Türkiye’ye dön",
+        "effects": {
+          "mentality": 5
+        },
+        "nextScene": "scene7b"
+      }
+    ]
+  },
+  "scene8c": {
+    "title": "Medya İkonu",
+    "text": "Reklamlar, TV şovları, belgeseller... Sahalardan çok ekranlardasın.",
+    "image": "📺",
+    "playerThoughts": "Artık futbolcu değil, bir markayım.",
+    "options": [
+      {
+        "text": "🎤 Spor yorumculuğuna geç",
+        "effects": {},
+        "nextScene": "sceneEnd4"
+      },
+      {
+        "text": "📚 Genç oyunculara koçluk yap",
+        "effects": {},
+        "nextScene": "sceneEnd5"
+      }
+    ]
+  },
+  "sceneEnd1": {
+    "title": "Aslan Gibi Veda",
+    "text": "Kariyerini Galatasaray’da tamamladın. Kulübün efsaneleri arasında yer aldın.",
+    "image": "🦁",
+    "playerThoughts": "Sadakatimi hiç bozmadım. Gururluyum."
+  },
+  "sceneEnd2": {
+    "title": "Zirvede Bırakmak",
+    "text": "Futbolu Avrupa’nın zirvesinde bıraktın. Unutulmaz bir kariyerdi.",
+    "image": "🎯",
+    "playerThoughts": "Hayatım boyunca bu anı bekledim. Şimdi huzurluyum."
+  },
+  "sceneEnd3": {
+    "title": "Sönük Kapanış",
+    "text": "Kariyerin başta parladı ama sonra unutulmaya yüz tuttu. Yine de pişman değilsin.",
+    "image": "🌫️",
+    "playerThoughts": "Her şeyden ders çıkardım."
+  },
+  "sceneEnd4": {
+    "title": "Ekranların Yıldızı",
+    "text": "Spor yorumculuğunda yıldız oldun. Futbol bilgini herkes takdir ediyor.",
+    "image": "🎙️",
+    "playerThoughts": "Sahadan ekrana geçtim ama oyunun içindeyim."
+  },
+  "sceneEnd5": {
+    "title": "Yeni Nesle İlham",
+    "text": "Genç oyunculara mentorluk yapıyorsun. Yeni yıldızlar yetiştiriyorsun.",
+    "image": "👨‍🏫",
+    "playerThoughts": "Onların başarısı artık benim başarım."
   }
-]
+}
