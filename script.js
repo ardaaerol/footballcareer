@@ -16,6 +16,15 @@ let playerInfo = {
 // Initialize game
 document.addEventListener('DOMContentLoaded', function() {
     showLoadingScreen();
+    
+    // Check for URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const sceneParam = urlParams.get('scene');
+    if (sceneParam) {
+        currentSceneId = sceneParam;
+        console.log('Starting from URL parameter scene:', currentSceneId);
+    }
+    
     loadScenes();
 });
 
@@ -41,23 +50,42 @@ function showLoadingScreen() {
 
 async function loadScenes() {
     try {
-        const response = await fetch("scenes.json");
+        console.log('Starting to load scenes...');
+        const response = await fetch("scenes.json?t=" + Date.now());
+        console.log('Response status:', response.status);
+        
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         const data = await response.json();
+        console.log('Data type:', typeof data, 'Is array:', Array.isArray(data));
         
         if (typeof data !== 'object' || data === null) {
             throw new Error('Invalid JSON data format');
         }
         
-        scenes = data;
-        console.log('Scenes loaded successfully:', Object.keys(scenes).length, 'scenes');
+        // Additional check for array vs object
+        if (Array.isArray(data)) {
+            console.error('Expected object but got array. Converting...');
+            // If it's an array, we need to handle it differently
+            const convertedData = {};
+            data.forEach((scene, index) => {
+                convertedData[`scene${index + 1}`] = scene;
+            });
+            scenes = convertedData;
+        } else {
+            scenes = data;
+        }
         
-        // Initialize UI
-        updateStatsDisplay();
-        updatePlayerInfo();
-        loadScene(currentSceneId);
+        console.log('Scenes loaded successfully:', Object.keys(scenes).length, 'scenes');
+        console.log('Available scene IDs:', Object.keys(scenes));
+        
+        // Initialize UI after a small delay to ensure DOM is ready
+        setTimeout(() => {
+            updateStatsDisplay();
+            updatePlayerInfo();
+            loadScene(currentSceneId);
+        }, 100);
     } catch (error) {
         console.error('Error loading scenes:', error);
         document.getElementById("scene-title").innerText = "Hata!";
@@ -68,7 +96,13 @@ async function loadScenes() {
 function loadScene(id) {
     const scene = scenes[id];
     if (!scene) {
-        console.error('Scene not found:', id);
+        console.error('Scene not found:', id, 'Available scenes:', Object.keys(scenes));
+        // Fallback to scene1 if the requested scene doesn't exist
+        if (id !== 'scene1' && scenes['scene1']) {
+            console.log('Falling back to scene1');
+            currentSceneId = 'scene1';
+            return loadScene('scene1');
+        }
         document.getElementById("scene-title").innerText = "Hata!";
         document.getElementById("scene-text").innerText = `Sahne bulunamadı: ${id}`;
         return;
