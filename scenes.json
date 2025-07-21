@@ -2,7 +2,7 @@
   "scene1": {
     "title": "Rüyanın Başlangıcı",
     "text": "17 yaşındasın ve İstanbul'un kenar mahallelerinden birinde yaşıyorsun. Kartalspor'un U17 takımında oynuyorsun. Bugün sezonun en önemli maçı - İstanbul şampiyonluğu için final maçı. Tribünde Galatasaray, Fenerbahçe ve Beşiktaş'ın scout'ları var. Bu senin hayatını değiştirebilecek an. Nasıl hissediyorsun?",
-    "image": "🏟️",
+    
     "playerThoughts": "Kalbim çok hızlı atıyor. Yıllardır beklediğim fırsat nihayet geldi.",
     "options": [
       {
@@ -25,7 +25,7 @@
   "scene2a": {
     "title": "Yıldızın Doğuşu",
     "text": "Maça muhteşem başladın! 15. dakikada harika bir frikik golü attın. 38. dakikada enfes bir asistle takım arkadaşını gole gönderdin. İkinci yarıda bir gol daha attın ve adeta show yaptın. Final düdüğünde 3-0 kazandınız ve sen maçın yıldızıydın. Soyunma odasında menajerin, üç büyük kulübün de seni istediğini söyledi.",
-    "image": "⚽",
+   
     "playerThoughts": "İnanamıyorum! Hayalim gerçek oluyor. Hangi kulübü seçmeliyim?",
     "achievements": ["İstanbul U17 Şampiyonu", "Final Maçı MVP'si"],
     "options": [
@@ -49,7 +49,7 @@
   "scene2b": {
     "title": "Fırsatın Kaçışı",
     "text": "Maçta gerginliğin seni ele geçirdi. İlk yarıda iki net pozisyonu kaçırdın. İkinci yarıda daha da kötüleşti - basit bir pasta bile hata yaptın. Takım kazandı ama senin performansın hayal kırıklığıydı. Menajerin maç sonrası, 'Üzülme, daha çok genç ve yetenekli bir oyuncusun. Kartalspor seni çok seviyor, burada gelişmeye devam edebilirsin' dedi.",
-    "image": "😔",
+    
     "playerThoughts": "Çok kötü oynadım. Belki de büyük sahne için henüz hazır değilim.",
     "options": [
       {
@@ -72,7 +72,7 @@
   "scene2c": {
     "title": "Zeki Oyun",
     "text": "Maçta sakin kaldın ve zekice oynadın. Gol atmadın ama 3 muhteşem asist yaptın ve defansta kritik müdahaleler gerçekleştirdin. Takım 4-1 kazandı ve sen sessiz kahramandın. Scout'lar senin olgunluğundan etkilendi. Beşiktaş ve Trabzonspor seni istediğini bildirdi.",
-    "image": "🧠",
+
     "playerThoughts": "Gol atmak güzel ama takım başarısı daha önemli. Doğru kararlar verdim.",
     "achievements": ["İstanbul U17 Şampiyonu"],
     "options": [
@@ -91,7 +91,7 @@
   "scene3a": {
     "title": "Galatasaray Yolu",
     "text": "Galatasaray'ın Florya tesislerinde antrenörleri ve yöneticileriyle görüştün. Teknik direktör seni çok beğendiğini, ancak aceleci olmaman gerektiğini söyledi. 'Sen yetenekli bir oyuncusun ama burada rekabet çok yüksek. A takıma çıkman 2-3 yıl alabilir. Sabırlı olmalısın' dedi. Ayrıca aylık 25,000 TL maaş teklif ettiler.",
-    "image": "🟡🔴",
+  
     "playerThoughts": "Galatasaray çok büyük kulüp ama rekabet gerçekten zorlu görünüyor.",
     "options": [
       {
@@ -114,7 +114,7 @@
   "scene3b": {
     "title": "Fenerbahçe Kapıları",
     "text": "Fenerbahçe'nin Samandıra tesislerinde altyapı sorumlusuyla görüştün. 'Senin potansiyelini görüyoruz ama çok çalışman gerekecek. Burada disiplin çok önemli. Her gün sabah 6'da antrenman, akşam okul, hafta sonları maçlar' dedi. U19 takımında başlayacaksın ve aylık 20,000 TL alacaksın.",
-    "image": "💙💛",
+   
     "playerThoughts": "Fenerbahçe'de disiplin çok sıkı ama gelişim programları harika görünüyor.",
     "options": [
       {
@@ -132,7 +132,7 @@
   "scene3c": {
     "title": "Beşiktaş'ın Teklifi",
     "text": "Beşiktaş'ın Nevzat Demir tesislerinde antrenörlerle konuştun. 'Sen çok zeki bir oyuncusun. Burada sadece teknik değil, mental olarak da güçlendirecek bir program hazırladık. Ayrıca eğitimine de devam edebilirsin' dediler. U19'da başlayıp 6 ay sonra profesyonel sözleşme imzalayacaksın.",
-    "image": "⚫⚪",
+  
     "playerThoughts": "Beşiktaş'ta hem futbol hem eğitim dengesini kurabilirim. Bu mantıklı görünüyor.",
     "options": [
       {
@@ -150,7 +150,7 @@
   "scene3d": {
     "title": "Trabzonspor Macerası",
     "text": "Trabzonspor'un Mehmet Ali Yılmaz tesislerinde teknik direktörle görüştün. 'Burada genç oyuncular daha çabuk şans buluyor. Sen yetenekli bir oyuncusun ve burada 1-2 yıl sonra A takımda olabilirsin' dedi. Karadeniz'in zorlu iklimi ve tutkulu taraftarları seni bekliyor.",
-    "image": "🔴🔵",
+ 
     "playerThoughts": "Trabzonspor'da A takıma çıkmak daha kolay olabilir ama İstanbul'dan uzaklaşmak zor.",
     "options": [
       {
@@ -168,7 +168,7 @@
   "scene4a": {
     "title": "Kararlı Gelişim",
     "text": "Kartalspor'da kalmaya karar verdin ve inanılmaz bir çalışma disiplini oluşturdun. Her sabah 5'te kalkıp koşu yapıyor, öğleden sonra teknik antrenman yapıyorsun. 6 ay sonra Türkiye U18 Milli Takımı'na davet edildin! Bu senin için büyük bir onur ve fırsat.",
-    "image": "🏃‍♂️",
+
     "playerThoughts": "Çalışmak gerçekten işe yarıyor. Milli takım daveti hayallerimin gerçekleşmesi!",
     "achievements": ["Türkiye U18 Milli Takımı"],
     "options": [
@@ -187,7 +187,7 @@
   "scene4b": {
     "title": "Transfer Arayışı",
     "text": "Menajerin sana birkaç küçük kulüpten teklif geldiğini söyledi. Sancaktepe FK, Ümraniyespor ve Pendikspor seni istiyorlar. Bu kulüplerde daha fazla oyun şansın olacak ama tesisleri ve imkanları büyük kulüpler kadar iyi değil.",
-    "image": "🔄",
+    
     "playerThoughts": "Belki küçük bir kulüpte kendimi gösterirsem büyük kulüpler tekrar ilgi duyar.",
     "options": [
       {
@@ -210,14 +210,14 @@
   "scene4c": {
     "title": "Eğitim Tercihi",
     "text": "Futbolu bırakıp üniversiteye odaklandın. Belki de spor endüstrisinde başka bir kariyerin olur.",
-    "image": "📚",
+
     "playerThoughts": "Kariyerim futbolla olmadı ama bambaşka kapılar açılıyor.",
     "options": []
   },
   "scene4d": {
     "title": "Bekleme ve Gelişim",
     "text": "Büyük kulüplerin teklifini beklerken antrenmanlara odaklandın. Bir sonraki sezonda tekrar scoutların ilgisini çekebilirsin.",
-    "image": "⏳",
+
     "playerThoughts": "Belki doğru zaman henüz gelmemiştir.",
     "options": [
       {
@@ -235,7 +235,7 @@
   "scene5a": {
     "title": "Galatasaray Altyapısında",
     "text": "Galatasaray altyapısına katıldın ve gerçeklik seni vurdu. Buradaki her oyuncu senin kadar yetenekli, hatta bazıları daha da iyi. İlk 6 ayda U19'da oynadın ve ortalama bir performans sergiledin. Antrenör, 'Daha fazla çalışman ve sabır göstermen gerekiyor' dedi. A takım antrenmanlarına bazen çağrılıyorsun.",
-    "image": "🟡🔴",
+   
     "playerThoughts": "Burası beklediğimden çok daha zor. Ama büyük kulüpte olmak güzel bir his.",
     "options": [
       {
@@ -258,7 +258,7 @@
   "scene5b": {
     "title": "Fenerbahçe Altyapısında",
     "text": "Samandıra'daki antrenmanlarda çok zorlandın ama zamanla alıştın. U19 liginde forma giymeye başladın ve ilk sezonunda takımın en çalışkan oyuncusu seçildin.",
-    "image": "💙💛",
+  
     "playerThoughts": "Disiplin bana iyi geliyor, Fenerbahçe’de yıldız olabilecek miyim?",
     "options": [
       {
@@ -276,7 +276,7 @@
   "scene5c": {
     "title": "Beşiktaş’ta Eğitim ve Futbol",
     "text": "Hem üniversite hem profesyonel futbol bir arada zordu ama başardın. Beşiktaş U19’da kaptan oldun, kısa sürede profesyonel oldun.",
-    "image": "⚫⚪🎓",
+
     "playerThoughts": "Zeki ve sabırlı olmak kariyerimi kurtardı.",
     "options": [
       {
@@ -294,7 +294,7 @@
   "scene5d": {
     "title": "Trabzonspor’da Başlangıç",
     "text": "Trabzonspor U19’da direkt 11’de başladın. Karadeniz’in zor havasına rağmen ilk sezonunda 5 gol, 7 asist yaptın.",
-    "image": "🔴🔵",
+
     "playerThoughts": "Trabzon’da hayat zorlu ama futbol hızlı.",
     "options": [
       {
@@ -312,7 +312,7 @@
   "scene5e": {
     "title": "Hazırlık Süreci",
     "text": "Milli takım teklifini reddettin. Kulüpte yoğun çalışmaya devam ettin, sezon ortasında yine milli takım çağrısı aldın.",
-    "image": "⏳",
+
     "playerThoughts": "Doğru zamanı beklemek bazen iyi olabilir.",
     "options": [
       {
@@ -330,7 +330,7 @@
   "scene5f": {
     "title": "Sancaktepe FK Fırsatı",
     "text": "Sancaktepe’de A takımda hemen oynamaya başladın. 1. Lig'de sezonun en iyi genç oyuncusu oldun.",
-    "image": "⚽🏃‍♂️",
+
     "playerThoughts": "Daha küçük ama güven veren bir kulüp. Beni tekrar büyüklerin radarına sokabilir.",
     "options": [
       {
@@ -348,7 +348,7 @@
   "scene5g": {
     "title": "Ümraniyespor Deneyimi",
     "text": "Ümraniyespor’da sezonun ilk yarısında 6 gol attın. Takım kaptanı seni çok beğendi ve Süper Lig'den transfer teklifi aldı.",
-    "image": "⚽🔝",
+
     "playerThoughts": "Yavaş yavaş hayallerime yaklaşıyorum.",
     "options": [
       {
@@ -366,7 +366,7 @@
   "scene6a": {
     "title": "Milli Takım Deneyimi",
     "text": "Türkiye U18 Milli Takımı kampına katıldın. Avrupa Şampiyonası elemeleri için hazırlanıyorsunuz. İlk maçta Almanya'ya karşı oynadın ve muhteşem bir performans sergiledin. Gol attın, asist yaptın ve tüm Türkiye seni konuşmaya başladı. Sosyal medyada trending topic oldun!",
-    "image": "🇹🇷",
+ 
     "playerThoughts": "Milli forma giymek tarifsiz bir duygu! Tüm Türkiye beni izliyor.",
     "achievements": ["İlk Milli Takım Golü", "Sosyal Medya Fenomeni"],
     "options": [
@@ -390,7 +390,7 @@
   "scene7a": {
     "title": "Galatasaray'da Yükseliş",
     "text": "Yoğun antrenman programın meyvesini verdi. A takım antrenmanlarında dikkat çektin ve teknik direktör seni Avrupa Ligi'ndeki bir maçın kadrosuna aldı. 75. dakikada oyuna girdin ve harika bir gol attın! Tribünler çoştu, sen de gözyaşlarına boğuldun.",
-    "image": "⚽🌟",
+
     "playerThoughts": "İlk profesyonel golüm! Ali Sami Yen'de gol atmak... Bu bir rüya olmalı.",
     "achievements": ["İlk Profesyonel Gol", "Avrupa Ligi Golcüsü"],
     "options": [
@@ -409,7 +409,7 @@
   "scene7b": {
     "title": "Fenerbahçe’de Yüksel",
     "text": "Ekstra antrenmanlar ve disiplinle Fenerbahçe A takımına yükseldin. Kadıköy’de derbide ilk 11 başlama fırsatı buldun.",
-    "image": "💙💛🔥",
+  
     "playerThoughts": "Bu maçta göstereceklerim kariyerimi belirler.",
     "options": [
       {
@@ -427,7 +427,7 @@
   "scene7c": {
     "title": "Sosyal Medya Fenomeni",
     "text": "Futbolun yanında sosyal medyada yüzbinlerce takipçi kazandın. Bu ilgi bazı kulüplerin dikkatini çekse de, antrenörün performansında dalgalanma olduğunu düşünüyor.",
-    "image": "📱",
+ 
     "playerThoughts": "Fenomen olmak güzel ama futboldan uzaklaşmak istemiyorum.",
     "options": [
       {
@@ -445,7 +445,7 @@
   "scene8a": {
     "title": "Avrupa'dan Teklif",
     "text": "Milli takımdaki performansın sonrası Avrupa'dan teklif yağdı! Ajax, Valencia ve Olympiakos seni istiyor. Ajax en cazip teklifi yapıyor - 3 yıllık sözleşme ve çok iyi bir maaş. Ayrıca Hollanda'da gelişim programları dünyaca ünlü.",
-    "image": "🌍",
+
     "playerThoughts": "Avrupa! Hayallerimden biri gerçekleşiyor. Ama Türkiye'yi terk etmek zor.",
     "options": [
       {
@@ -468,7 +468,7 @@
   "scene8b": {
     "title": "Maaş Artışı",
     "text": "Kulübün sana zam yaptı ama performansın hafif düştü. Takımda kalıcı olmak için motivasyonunu tazelemen gerek.",
-    "image": "💸",
+
     "playerThoughts": "Para güzel ama formumu kaybetmemeliyim.",
     "options": [
       {
@@ -481,7 +481,7 @@
   "scene9a": {
     "title": "Galatasaray Efsanesi",
     "text": "A takımda kalıcı oldun ve sezonun geri kalanında 15 maçta 8 gol attın. Şampiyonluk yaşadın ve taraftarlar seni çok sevdi. 'Bizim çocuk' diye çağırıyorlar seni. Avrupa'dan teklifler gelmeye başladı ama sen henüz Galatasaray'da mutlusun.",
-    "image": "👑",
+
     "playerThoughts": "Burada çok mutluyum ama Avrupa'da kendimi test etmek istiyorum.",
     "achievements": ["Süper Lig Şampiyonu", "Sezonun Genç Oyuncusu"],
     "options": [
@@ -500,7 +500,7 @@
   "scene10a": {
     "title": "Ajax Serüveni",
     "text": "Amsterdam'a geldin ve Ajax'ın ünlü altyapı sistemine katıldın. İlk sezon zor geçti - dil problemi, kültür farkı ve Hollanda futbolunun farklı tarzı. Ama ikinci sezonun başında patladın! Şampiyonlar Ligi'nde Real Madrid'e karşı gol attın.",
-    "image": "🇳🇱⚽",
+
     "playerThoughts": "Amsterdam'a alışmak zor oldu ama futbol konusunda çok şey öğreniyorum.",
     "achievements": ["Şampiyonlar Ligi Golcüsü", "Hollanda Kupası Şampiyonu"],
     "options": [
@@ -519,7 +519,7 @@
   "scene10b": {
     "title": "Valencia Macerası",
     "text": "La Liga'da oynamak çocukluk hayalindi. Valencia'nın Mestalla Stadı'na ilk adımını attığında kalbin yerinden fırlayacak gibiydi. İlk sezonunda 7 gol attın, 10 asist yaptın. Taraftarlar seni çok sevdi. Ancak İspanyol futbolu oldukça tempolu ve zorluydu.",
-    "image": "🇪🇸⚽",
+
     "playerThoughts": "İspanya’da oynamak rüya gibi ama çok da yorucu.",
     "achievements": ["La Liga Yılın Genç Oyuncusu"],
     "options": [
@@ -538,7 +538,7 @@
   "scene10c": {
     "title": "Avrupa Yolculuğu",
     "text": "Galatasaray’daki başarılarının ardından Avrupa’dan teklif aldın. Milan, Monaco ve PSV seni istiyor. Yeni bir sayfa açmak için karar zamanı.",
-    "image": "✈️🌍",
+
     "playerThoughts": "Avrupa'da oynamak büyük bir adım. Doğru kulübü seçmeliyim.",
     "options": [
       {
@@ -561,7 +561,7 @@
   "sceneEndLegend": {
     "title": "Galatasaray Efsanesi",
     "text": "12 yıllık kariyerinin tamamını Galatasaray'da geçirdin. 8 kez şampiyon oldun, 2 kez Avrupa kupası kazandın. Forman emekli edildi ve Türk Telekom Stadı'nda heykelin dikildi. Taraftarlar seni 'Aslan Kalbi' diye çağırıyor.",
-    "image": "🏆👑",
+
     "finalStats": {
       "goals": 287,
       "assists": 156,
@@ -574,7 +574,7 @@
   "sceneEndEurope": {
     "title": "Avrupa Yıldızı",
     "text": "Barcelona, PSG ve Manchester United gibi kulüplerde forma giydin. Ballon d'Or adaylıkları, Şampiyonlar Ligi şampiyonlukları kazandın. Futbol dünyasının yıldızları arasına adını yazdırdın.",
-    "image": "🌍🏆",
+
     "finalStats": {
       "goals": 312,
       "assists": 189,
@@ -587,7 +587,7 @@
   "sceneEndReturn": {
     "title": "Vatan Sevgisi",
     "text": "Avrupa kariyerinin ardından Türkiye’ye döndün. Milli Takım kaptanlığı yaptın, genç futbolculara örnek oldun. Hem yurt dışında hem de Türkiye’de unutulmaz bir kariyerin oldu.",
-    "image": "🇹🇷❤️",
+
     "finalStats": {
       "goals": 198,
       "assists": 134,
@@ -600,7 +600,7 @@
   "sceneEndInfluencer": {
     "title": "Fenomen Sonu",
     "text": "Futbol kariyerini genç yaşta bırakıp sosyal medya ve televizyonun aranan ismi oldun. Gençler için ilham kaynağı, markalar için bir ikon haline geldin.",
-    "image": "📱🏆",
+  
     "finalStats": {
       "follower_count": 3000000,
       "legend_status": "Fenomen"
