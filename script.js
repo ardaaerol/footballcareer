@@ -35,10 +35,14 @@ function loadScene(id) {
   currentSceneId = id;
 
   // Görsel gösterme
-  if (scene.image && scene.image.length <= 3) {
-    document.getElementById("scene-image").innerText = scene.image;
-  } else if (scene.image) {
-    document.getElementById("scene-image").innerHTML = `<img src="images/${scene.image}" alt="Sahne Görseli" />`;
+  if (scene.image) {
+    // Check if it's an emoji or contains emoji characters (no file extension)
+    if (!scene.image.includes('.')) {
+      document.getElementById("scene-image").innerText = scene.image;
+    } else {
+      // Only try to load as image if it has a file extension
+      document.getElementById("scene-image").innerHTML = `<img src="images/${scene.image}" alt="Sahne Görseli" />`;
+    }
   }
 
   document.getElementById("scene-title").innerText = scene.title || "";
