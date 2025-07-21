@@ -2,14 +2,36 @@ let scenes = {};
 let currentSceneId = "scene1";
 
 async function loadScenes() {
-  const response = await fetch("scenes.json");
-  const data = await response.json();
-  scenes = data;   // forEach YOK, direk ata!
-  loadScene(currentSceneId);
+  try {
+    const response = await fetch("scenes.json");
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    
+    // Ensure data is an object with scenes
+    if (typeof data !== 'object' || data === null) {
+      throw new Error('Invalid JSON data format');
+    }
+    
+    scenes = data;
+    console.log('Scenes loaded successfully:', Object.keys(scenes).length, 'scenes');
+    loadScene(currentSceneId);
+  } catch (error) {
+    console.error('Error loading scenes:', error);
+    document.getElementById("scene-title").innerText = "Hata!";
+    document.getElementById("scene-text").innerText = "Oyun yüklenirken bir hata oluştu. Lütfen sayfayı yenileyin.";
+  }
 }
 
 function loadScene(id) {
   const scene = scenes[id];
+  if (!scene) {
+    console.error('Scene not found:', id);
+    document.getElementById("scene-title").innerText = "Hata!";
+    document.getElementById("scene-text").innerText = `Sahne bulunamadı: ${id}`;
+    return;
+  }
   currentSceneId = id;
 
   // Görsel gösterme
