@@ -3,7 +3,9 @@ let currentSceneId = "scene1";
 
 async function loadScenes() {
   const response = await fetch("scenes.json");
-  scenes = await response.json(); // direkt object!
+  const data = await response.json();
+  scenes = {};
+  data.forEach(scene => scenes[scene.id] = scene);
   loadScene(currentSceneId);
 }
 
@@ -33,6 +35,5 @@ function loadScene(id) {
     optionsContainer.appendChild(endText);
   }
 }
-
 
 loadScenes();
