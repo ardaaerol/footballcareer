@@ -72,7 +72,6 @@
             <div class="scene-container">
                 <div class="scene-header">
                     <h2 id="scene-title">Rüyanın Başlangıcı</h2>
-                    
                 </div>
                 
                 <div class="scene-content">
@@ -97,24 +96,13 @@
 
                 <!-- Restart Button -->
                 <div class="restart-container" id="restart-container" style="display: none;">
-                    <button class="restart-btn" onclick="restartGame()">
+                    <button class="restart-btn" id="restart-btn">
                         <i class="fas fa-redo"></i>
                         Yeniden Başla
                     </button>
                 </div>
             </div>
         </main>
-
-        <!-- Game History Panel (gelişmiş özellik) -->
-        <div class="history-panel" id="history-panel">
-            <button class="history-toggle" onclick="toggleHistory()">
-                <i class="fas fa-history"></i>
-                Geçmiş
-            </button>
-            <div class="history-content" id="history-content">
-                <!-- Oyun geçmişi buraya gelecek -->
-            </div>
-        </div>
 
         <!-- Loading Screen -->
         <div class="loading-screen" id="loading-screen">
@@ -128,22 +116,6 @@
         </div>
     </div>
 
-    <script>
-        // Add error handling for the script loading
-        window.addEventListener('error', function(e) {
-            console.error('Global error:', e.error, e.filename, e.lineno);
-        });
-        
-        // Cache busting for script loading
-        const script = document.createElement('script');
-        script.src = 'script.js?v=3.0&t=' + Date.now();
-        script.onerror = function() {
-            console.error('Failed to load script.js');
-        };
-        script.onload = function() {
-            console.log('Script.js loaded successfully');
-        };
-        document.head.appendChild(script);
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
