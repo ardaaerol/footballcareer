@@ -11,11 +11,6 @@ function loadScene(id) {
   const scene = scenes[id];
   currentSceneId = id;
 
-  // Eğer image bir emoji ise bu satırı güncelle!
-  // document.getElementById("scene-image").innerText = scene.image;  // <-- emoji için
-  // Eğer image dosya ismi ise:
-  // document.getElementById("scene-image").src = "images/" + scene.image; // <-- resim için
-
   document.getElementById("scene-title").innerText = scene.title || "";
   document.getElementById("scene-image").innerText = scene.image || "";
   document.getElementById("scene-text").innerText = scene.text || "";
@@ -38,5 +33,6 @@ function loadScene(id) {
     optionsContainer.appendChild(endText);
   }
 }
+
 
 loadScenes();
