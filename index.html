@@ -1,17 +1,130 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Yes or Goal!</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yes or GOAL!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-  <div id="game-container">
-    <img id="scene-image" src="" alt="Sahne Görseli" />
-    <div id="scene-text"></div>
-    <div id="options-container"></div>
-  </div>
-  <script src="script.js"></script>
+    <div class="game-container">
+        <!-- Header -->
+        <header class="game-header">
+            <div class="title-section">
+                <i class="fas fa-trophy trophy-icon"></i>
+                <h1>Yes or GOAL!</h1>
+                <i class="fas fa-trophy trophy-icon"></i>
+            </div>
+            <p class="subtitle">Kendi futbol efsanenizi yazın</p>
+        </header>
+
+        <!-- Player Stats Panel -->
+        <div class="stats-panel">
+            <div class="stat-card">
+                <i class="fas fa-bullseye stat-icon"></i>
+                <div class="stat-value" id="skill-value">70</div>
+                <div class="stat-label">Yetenek</div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-heart stat-icon"></i>
+                <div class="stat-value" id="mentality-value">75</div>
+                <div class="stat-label">Mentalite</div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-star stat-icon"></i>
+                <div class="stat-value" id="popularity-value">50</div>
+                <div class="stat-label">Popülerlik</div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-calendar stat-icon"></i>
+                <div class="stat-value" id="age-value">17</div>
+                <div class="stat-label">Yaş</div>
+            </div>
+        </div>
+
+        <!-- Player Info Panel -->
+        <div class="player-info">
+            <div class="info-item">
+                <i class="fas fa-users"></i>
+                <span id="current-club">Kartalspor U17</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-trophy"></i>
+                <span id="experience-value">0 XP</span>
+            </div>
+        </div>
+
+        <!-- Achievements Panel -->
+        <div class="achievements-panel" id="achievements-panel">
+            <h3><i class="fas fa-medal"></i> Başarılar</h3>
+            <div id="achievements-list">
+                <span class="no-achievements">Henüz başarı yok</span>
+            </div>
+        </div>
+
+        <!-- Main Game Area -->
+        <main class="game-main">
+            <!-- Scene Display -->
+            <div class="scene-container">
+                <div class="scene-header">
+                    <h2 id="scene-title">Rüyanın Başlangıcı</h2>
+                    <div class="scene-image" id="scene-image">🏟️</div>
+                </div>
+                
+                <div class="scene-content">
+                    <div class="scene-text" id="scene-text">
+                        <!-- Senaryo metni buraya gelecek -->
+                    </div>
+                    
+                    <div class="player-thoughts" id="player-thoughts">
+                        <!-- Oyuncu düşünceleri buraya gelecek -->
+                    </div>
+                </div>
+                
+                <!-- Choice Buttons -->
+                <div class="choices-container" id="choices-container">
+                    <!-- Seçenekler buraya dinamik olarak gelecek -->
+                </div>
+
+                <!-- Final Stats (endings için) -->
+                <div class="final-stats" id="final-stats" style="display: none;">
+                    <!-- Final istatistikler buraya gelecek -->
+                </div>
+
+                <!-- Restart Button -->
+                <div class="restart-container" id="restart-container" style="display: none;">
+                    <button class="restart-btn" onclick="restartGame()">
+                        <i class="fas fa-redo"></i>
+                        Yeniden Başla
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Game History Panel (gelişmiş özellik) -->
+        <div class="history-panel" id="history-panel">
+            <button class="history-toggle" onclick="toggleHistory()">
+                <i class="fas fa-history"></i>
+                Geçmiş
+            </button>
+            <div class="history-content" id="history-content">
+                <!-- Oyun geçmişi buraya gelecek -->
+            </div>
+        </div>
+
+        <!-- Loading Screen -->
+        <div class="loading-screen" id="loading-screen">
+            <div class="loading-content">
+                <i class="fas fa-futbol loading-ball"></i>
+                <h2>Oyun Yükleniyor...</h2>
+                <div class="loading-bar">
+                    <div class="loading-progress"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
