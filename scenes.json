@@ -1,0 +1,203 @@
+[
+  {
+    "id": "scene1",
+    "text": "Henüz 17 yaşındasın. İstanbul’da küçük bir kulüp olan Kartalspor’un altyapısında oynuyorsun. Bugün U17 takımıyla sezonun son maçına çıkacaksın. Tribünde İstanbul’daki büyük kulüplerin gözlemcileri olacak. Hazır mısın?",
+    "image": "scene1.png",
+    "options": [
+      {
+        "text": "Her şeyimi sahaya koyacağım!",
+        "nextScene": "scene2a"
+      },
+      {
+        "text": "Gerginim... elimden geleni yaparım",
+        "nextScene": "scene2b"
+      }
+    ]
+  },
+  {
+    "id": "scene2a",
+    "text": "Sahaya çıktın ve adeta alev aldın! 2 gol 1 asistle takımını galibiyete taşıdın. Maçtan sonra Galatasaray ve Başakşehir scoutları menajerinle görüşmek istedi.",
+    "image": "scene2a.png",
+    "options": [
+      {
+        "text": "Galatasaray ile görüş",
+        "nextScene": "scene3a"
+      },
+      {
+        "text": "Başakşehir ile görüş",
+        "nextScene": "scene3b"
+      }
+    ]
+  },
+  {
+    "id": "scene2b",
+    "text": "Maçta heyecanına yenildin. Sahada silik bir performans gösterdin. Takım kazandı ama sen beklenen etkiyi yaratamadın. Menajerin, 'Yılma, seni hala isteyen kulüpler olabilir' dedi.",
+    "image": "scene2b.png",
+    "options": [
+      {
+        "text": "Moral bozma, antrenmana odaklan",
+        "nextScene": "scene3c"
+      },
+      {
+        "text": "Kulüp değiştirmeyi düşün",
+        "nextScene": "scene3d"
+      }
+    ]
+  },
+  {
+    "id": "scene3a",
+    "text": "Florya’da altyapıya katıldın. İlk profesyonel sözleşme teklif edildi.",
+    "image": "scene3a.png",
+    "options": [
+      {
+        "text": "Kabul et",
+        "nextScene": "scene4a"
+      },
+      {
+        "text": "Biraz daha bekle",
+        "nextScene": "scene4b"
+      }
+    ]
+  },
+  {
+    "id": "scene3b",
+    "text": "Modern tesislerde profesyonel hazırlık kampı. Şehir dışı turnuvaya çağrıldın.",
+    "image": "scene3b.png",
+    "options": [
+      {
+        "text": "Turnuvaya katıl",
+        "nextScene": "scene4c"
+      },
+      {
+        "text": "Riske girme, altyapıda devam et",
+        "nextScene": "scene4d"
+      }
+    ]
+  },
+  {
+    "id": "scene3c",
+    "text": "1 yıl sonra Türkiye U18 millî takımına çağrıldın.",
+    "image": "scene3c.png",
+    "options": [
+      {
+        "text": "Millî forma için hazırım",
+        "nextScene": "scene4e"
+      },
+      {
+        "text": "Sakatlıktan korkuyorum",
+        "nextScene": "scene4f"
+      }
+    ]
+  },
+  {
+    "id": "scene3d",
+    "text": "Düşük profilli ama sana güvenen bir kulüp olan Sancaktepe FK ile anlaştın.",
+    "image": "scene3d.png",
+    "options": [
+      {
+        "text": "Şansımı burada denemeliyim",
+        "nextScene": "scene4g"
+      },
+      {
+        "text": "Vazgeç, okula ağırlık ver",
+        "nextScene": "sceneEnd_1"
+      }
+    ]
+  },
+  {
+    "id": "scene4a",
+    "text": "Hazırlık maçında gol attın. Teknik direktör sana ligde şans verecek.",
+    "image": "scene4a.png",
+    "options": [
+      {
+        "text": "Sahada agresif oyna",
+        "nextScene": "scene5a"
+      },
+      {
+        "text": "Takım oyununa sadık kal",
+        "nextScene": "scene5b"
+      }
+    ]
+  },
+  {
+    "id": "scene4c",
+    "text": "Yurtdışında oynadın, Torino’dan scout geldi.",
+    "image": "scene4c.png",
+    "options": [
+      {
+        "text": "Torino ile temasa geç",
+        "nextScene": "scene5c"
+      },
+      {
+        "text": "Türkiye’de kalmak istiyorum",
+        "nextScene": "scene5d"
+      }
+    ]
+  },
+  {
+    "id": "scene4e",
+    "text": "Hırvatistan maçında ilk 11 başlıyorsun.",
+    "image": "scene4e.png",
+    "options": [
+      {
+        "text": "Gol atmak için risk al",
+        "nextScene": "scene5e"
+      },
+      {
+        "text": "Takımı oynat, liderlik yap",
+        "nextScene": "scene5f"
+      }
+    ]
+  },
+  {
+    "id": "scene5a",
+    "text": "Şampiyonlar Ligi’nde gol attın. Dortmund seni izliyor.",
+    "image": "scene5a.png",
+    "options": [
+      {
+        "text": "Transfer iste",
+        "nextScene": "scene6a"
+      },
+      {
+        "text": "Galatasaray’da kal, kaptan ol",
+        "nextScene": "scene6b"
+      }
+    ]
+  },
+  {
+    "id": "scene5c",
+    "text": "İtalya'da adaptasyon sorunu yaşıyorsun.",
+    "image": "scene5c.png",
+    "options": [
+      {
+        "text": "Dil ve kültürü öğren",
+        "nextScene": "scene6c"
+      },
+      {
+        "text": "Menajerinle başka kulüp ara",
+        "nextScene": "scene6d"
+      }
+    ]
+  },
+  {
+    "id": "scene5e",
+    "text": "Avrupa Şampiyonası’nda gol kralı olma şansın var.",
+    "image": "scene5e.png",
+    "options": [
+      {
+        "text": "Bireysel başarıyı hedefle",
+        "nextScene": "scene6e"
+      },
+      {
+        "text": "Takım kupayı alsın yeter",
+        "nextScene": "scene6f"
+      }
+    ]
+  },
+  {
+    "id": "sceneEnd_1",
+    "text": "Futbolu bıraktın. Hayatını üniversite eğitimi ve farklı bir kariyerle sürdürüyorsun.",
+    "image": "scene_end1.png",
+    "options": []
+  }
+]
