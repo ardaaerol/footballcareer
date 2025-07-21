@@ -3,9 +3,7 @@ let currentSceneId = "scene1";
 
 async function loadScenes() {
   const response = await fetch("scenes.json");
-  const data = await response.json();
-  scenes = {};
-  data.forEach(scene => scenes[scene.id] = scene);
+  scenes = await response.json(); // direkt object!
   loadScene(currentSceneId);
 }
 
@@ -13,20 +11,28 @@ function loadScene(id) {
   const scene = scenes[id];
   currentSceneId = id;
 
-  document.getElementById("scene-image").src = "images/" + scene.image;
-  document.getElementById("scene-text").innerText = scene.text;
+  // Eğer image bir emoji ise bu satırı güncelle!
+  // document.getElementById("scene-image").innerText = scene.image;  // <-- emoji için
+  // Eğer image dosya ismi ise:
+  // document.getElementById("scene-image").src = "images/" + scene.image; // <-- resim için
 
-  const optionsContainer = document.getElementById("options-container");
+  document.getElementById("scene-title").innerText = scene.title || "";
+  document.getElementById("scene-image").innerText = scene.image || "";
+  document.getElementById("scene-text").innerText = scene.text || "";
+  document.getElementById("player-thoughts").innerText = scene.playerThoughts || "";
+
+  const optionsContainer = document.getElementById("choices-container");
   optionsContainer.innerHTML = "";
 
-  scene.options.forEach(option => {
-    const button = document.createElement("button");
-    button.innerText = option.text;
-    button.onclick = () => loadScene(option.nextScene);
-    optionsContainer.appendChild(button);
-  });
-
-  if (scene.options.length === 0) {
+  if (scene.options && scene.options.length > 0) {
+    scene.options.forEach(option => {
+      const button = document.createElement("button");
+      button.className = "choice-btn";
+      button.innerText = option.text;
+      button.onclick = () => loadScene(option.nextScene);
+      optionsContainer.appendChild(button);
+    });
+  } else {
     const endText = document.createElement("p");
     endText.innerText = "🏁 Oyun Sonu";
     optionsContainer.appendChild(endText);
