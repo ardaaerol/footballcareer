@@ -3,9 +3,7 @@ let currentSceneId = "scene1";
 
 async function loadScenes() {
   const response = await fetch("scenes.json");
-  const data = await response.json();
-  scenes = {};
-  data.forEach(scene => scenes[scene.id] = scene);
+  scenes = await response.json();   // burada forEach yok!
   loadScene(currentSceneId);
 }
 
