@@ -1,3 +1,6 @@
+window.alert("script.js gerçekten çalışıyor!");
+
+
 let scenes = {};
 let currentSceneId = "scene1";
 
