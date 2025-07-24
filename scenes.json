@@ -143,7 +143,7 @@
       {
         "text": "⚽ Sadece futbola odaklanmak istiyorum",
         "effects": { "skill": 8 },
-        "nextScene": "scene5b"
+        "nextScene": "scene4d"
       }
     ]
   },
@@ -339,7 +339,7 @@
         "nextScene": "scene7i"
       },
       {
-        "text": "📈 Yurt dışı menajerleriyle görüş",
+        "text": "⏳ Bir sezon daha burada kalıp gelişimi tamamla",
         "effects": { "experience": 8 },
         "nextScene": "scene7g"
       }
