@@ -387,6 +387,45 @@
       }
     ]
   },
+
+  "scene6b": {
+  "title": "Direktörle Konuşma",
+  "text": "Teknik direktörle görüşme talebinde bulundun. 'Çok yeteneklisin ama burada rekabet yüksek. Sabırlı ol, zamanla şansın artacak' dedi. Seni U21 takımına yükseltti ve kupa maçlarında şans vereceğini söyledi.",
+  
+  "playerThoughts": "En azından bir adım ilerledim. Kupa maçlarında kendimi göstermeliyim.",
+  "options": [
+    {
+      "text": "🏆 Kupa maçlarında muhteşem performans göster",
+      "effects": { "skill": 10, "experience": 8 },
+      "nextScene": "scene7a"
+    },
+    {
+      "text": "💼 Başka kulüplere gitmeyi düşün",
+      "effects": { "experience": 5 },
+      "nextScene": "scene7g"
+    }
+  ]
+},
+
+"scene6c": {
+  "title": "Sabır Testi",
+  "text": "Sabırla beklemeye karar verdin ama aylar geçmesine rağmen şansın artmadı. U19'da sıkışıp kaldın. Bazı takım arkadaşların senden sonra gelip A takıma çıktı.",
+  
+  "playerThoughts": "Belki de hata yaptım, daha agresif olmalıydım.",
+  "options": [
+    {
+      "text": "🔄 Transfer talebinde bulun",
+      "effects": { "mentality": -5, "experience": 3 },
+      "nextScene": "scene7g"
+    },
+    {
+      "text": "💪 Son bir kez daha şansını dene",
+      "effects": { "mentality": 8 },
+      "nextScene": "scene7a"
+    }
+  ]
+},
+  
   "scene7a": {
     "title": "Galatasaray'da Yükseliş",
     "text": "Yoğun antrenman programın meyvesini verdi. A takım antrenmanlarında dikkat çektin ve teknik direktör seni Avrupa Ligi'ndeki bir maçın kadrosuna aldı. 75. dakikada oyuna girdin ve harika bir gol attın! Tribünler çoştu, sen de gözyaşlarına boğuldun.",
@@ -442,9 +481,170 @@
       }
     ]
   },
+
+"scene7d": {
+  "title": "Akademik Başarı",
+  "text": "Hem futbolda hem eğitimde başarılı oldun. Beşiktaş A takımında oynarken aynı zamanda spor yönetimi bölümünde burslu okuyorsun. Kulüp seni geleceğin teknik direktör adayı olarak görüyor.",
+  
+  "playerThoughts": "İki kariyeri bir arada yürütmek zor ama ödüllendirici.",
+  "achievements": ["Akademik Başarı Ödülü"],
+  "options": [
+    {
+      "text": "🎓 Yüksek lisans yap ve antrenörlük belgesi al",
+      "effects": { "mentality": 15, "experience": 10 },
+      "nextScene": "scene9a"
+    },
+    {
+      "text": "⚽ Futbola tam konsantrasyon sağla",
+      "effects": { "skill": 12 },
+      "nextScene": "scene9b"
+    }
+  ]
+},
+
+"scene7e": {
+  "title": "Futbol Odağı",
+  "text": "Eğitimi bırakıp tamamen futbola odaklandın. Beşiktaş'ta forma şansın arttı ve seni Avrupa kupalarında oynattılar. UEFA Avrupa Ligi'nde attığın golle takımı gruptan çıkardın.",
+  
+  "playerThoughts": "Doğru karar vermişim, futbol benim hayatım.",
+  "achievements": ["Avrupa Ligi Golcüsü"],
+  "options": [
+    {
+      "text": "🌟 Bu performansı sürdür",
+      "effects": { "skill": 15, "popularity": 15 },
+      "nextScene": "scene9a"
+    },
+    {
+      "text": "🏃 Yurt dışı transferi için menajerle konuş",
+      "effects": { "experience": 10 },
+      "nextScene": "scene8a"
+    }
+  ]
+},
+
+  "scene7f": {
+  "title": "Kupa Kahramanı",
+  "text": "Türkiye Kupası'nda muhteşem performans gösterdin. Çeyrek finalde Galatasaray'a karşı hat-trick yaptın! A takım teknik direktörü seni hemen kadrosuna aldı. Artık Trabzonspor'un yıldızısın.",
+  
+  "playerThoughts": "Trabzon'a gelmek en doğru karardı. Burada gerçekten değer görüyorum.",
+  "achievements": ["Hat-trick Kahramanı", "Kupa Yıldızı"],
+  "options": [
+    {
+      "text": "🔴🔵 Trabzonspor'da devam et",
+      "effects": { "popularity": 20, "mentality": 10 },
+      "nextScene": "scene9a"
+    },
+    {
+      "text": "✈️ Avrupa'dan gelen teklifleri değerlendir",
+      "effects": { "experience": 15 },
+      "nextScene": "scene8a"
+    }
+  ]
+},
+
+"scene7g": {
+  "title": "Transfer Zamanı",
+  "text": "Transfer döneminde birçok kulüp seni istedi. Antalyaspor, Konyaspor ve Belçika'dan Gent teklif yaptı. Menajerın 'Bu yaşta Avrupa deneyimi iyi olur' diyor.",
+  
+  "playerThoughts": "Belki de yurt dışı benim için daha iyi olabilir.",
+  "options": [
+    {
+      "text": "🇧🇪 Gent'e git, Avrupa'da şansını dene",
+      "effects": { "skill": 12, "experience": 20 },
+      "nextScene": "scene10c"
+    },
+    {
+      "text": "🇹🇷 Antalyaspor'u seç, Süper Lig'de kal",
+      "effects": { "experience": 10, "popularity": 8 },
+      "nextScene": "scene9b"
+    }
+  ]
+},
+
+  "scene7h": {
+  "title": "Kulüp Kariyeri",
+  "text": "Milli takım yerine kulübüne odaklandın ve harika bir sezon geçirdin. 25 maçta 12 gol, 8 asist yaptın. Artık takımın yıldızısın ve kaptan yardımcısı oldun.",
+  
+  "playerThoughts": "Milli takımı kaçırdım ama kulübümde efsane oluyorum.",
+  "achievements": ["Sezonun Oyuncusu", "Kaptan Yardımcısı"],
+  "options": [
+    {
+      "text": "🏆 Kulübünle şampiyonluk yaşa",
+      "effects": { "popularity": 25, "mentality": 15 },
+      "nextScene": "scene9a"
+    },
+    {
+      "text": "💰 Büyük kulüplerden gelen teklifleri dinle",
+      "effects": { "experience": 10 },
+      "nextScene": "scene8a"
+    }
+  ]
+},
+
+"scene7i": {
+  "title": "Süper Lig Transferi",
+  "text": "Performansın Süper Lig kulüplerinin dikkatini çekti. Kasımpaşa ve Gaziantep FK ciddi teklifler yaptı. İkisi de sana direkt ilk 11 garantisi veriyor.",
+  
+  "playerThoughts": "Sonunda Süper Lig'e çıkıyorum! Hangi takım daha iyi olur?",
+  "options": [
+    {
+      "text": "🏙️ İstanbul'da kalmak için Kasımpaşa'yı seç",
+      "effects": { "popularity": 12, "experience": 8 },
+      "nextScene": "scene9b"
+    },
+    {
+      "text": "⚽ Gaziantep'in güçlü kadrosunu tercih et",
+      "effects": { "skill": 10, "experience": 10 },
+      "nextScene": "scene9c"
+    }
+  ]
+},
+
+  "scene7j": {
+  "title": "Süper Lig Macerası",
+  "text": "Kayserispor'a transfer oldun. İlk sezonunda 28 maçta 9 gol attın ve takımı Avrupa kupalarına taşıdın. Artık Süper Lig'in aranan oyuncularından birisin.",
+  
+  "playerThoughts": "Süper Lig'de kendimi kanıtladım. Sırada ne var?",
+  "achievements": ["Süper Lig'de İlk Sezon Başarısı"],
+  "options": [
+    {
+      "text": "🌟 Büyük kulüplerin ilgisini çek",
+      "effects": { "popularity": 15, "skill": 10 },
+      "nextScene": "scene8a"
+    },
+    {
+      "text": "🔴⚪ Kayserispor'da kaptan ol",
+      "effects": { "mentality": 12, "experience": 10 },
+      "nextScene": "scene9a"
+    }
+  ]
+},
+
+"scene7k": {
+  "title": "Liderlik Yolu",
+  "text": "Ümraniyespor'da bir yıl daha kaldın ve takım kaptanı oldun. Liderlik vasıfların gelişti ve takımı 1. Lig'de play-off'a taşıdın. Artık herkes seni tanıyor.",
+  
+  "playerThoughts": "Kaptan olmak büyük sorumluluk ama beni olgunlaştırdı.",
+  "achievements": ["Takım Kaptanı", "Play-off Kahramanı"],
+  "options": [
+    {
+      "text": "🎯 🏃 Direkt Süper Lig takımına transfer ol ",
+      "effects": { "popularity": 18, "mentality": 15 },
+      "nextScene": "scene9b"
+    },
+    {
+      "text": "🏃 Kayseri pastırması sever misin ?",
+      "effects": { "experience": 12 },
+      "nextScene": "scene7j"
+    }
+  ]
+}, 
+
+
+  
   "scene8a": {
     "title": "Avrupa'dan Teklif",
-    "text": "Milli takımdaki performansın sonrası Avrupa'dan teklif yağdı! Ajax, Valencia ve Olympiakos seni istiyor. Ajax en cazip teklifi yapıyor - 3 yıllık sözleşme ve çok iyi bir maaş. Ayrıca Hollanda'da gelişim programları dünyaca ünlü.",
+    "text": "Performansın sonrası Avrupa'dan teklif yağdı! Ajax, Valencia ve Olympiakos seni istiyor. Ajax en cazip teklifi yapıyor - 3 yıllık sözleşme ve çok iyi bir maaş. Ayrıca Hollanda'da gelişim programları dünyaca ünlü.",
 
     "playerThoughts": "Avrupa! Hayallerimden biri gerçekleşiyor. Ama Türkiye'yi terk etmek zor.",
     "options": [
@@ -479,14 +679,14 @@
     ]
   },
   "scene9a": {
-    "title": "Galatasaray Efsanesi",
+    "title": "Kulüp Efsanesi",
     "text": "A takımda kalıcı oldun ve sezonun geri kalanında 15 maçta 8 gol attın. Şampiyonluk yaşadın ve taraftarlar seni çok sevdi. 'Bizim çocuk' diye çağırıyorlar seni. Avrupa'dan teklifler gelmeye başladı ama sen henüz Galatasaray'da mutlusun.",
 
     "playerThoughts": "Burada çok mutluyum ama Avrupa'da kendimi test etmek istiyorum.",
     "achievements": ["Süper Lig Şampiyonu", "Sezonun Genç Oyuncusu"],
     "options": [
       {
-        "text": "🏆 Galatasaray'da efsane olmak için burada kalacağım",
+        "text": "🏆 Türkiye'de efsane olmak için burada kalacağım",
         "effects": { "popularity": 30, "mentality": 15 },
         "nextScene": "sceneEndLegend"
       },
@@ -497,6 +697,47 @@
       }
     ]
   },
+
+"scene9b": {
+  "title": "Süper Lig'de Patlama",
+  "text": "Transfer olduğun Süper Lig takımında harika bir sezon geçirdin. 32 maçta 14 gol, 11 asist yaptın. Milli takım teknik direktörü seni A Milli Takım'a çağırdı! İlk kez ay-yıldızlı formayı giyeceksin.",
+  
+  "playerThoughts": "A Milli Takım! Çocukluğumdan beri hayalimdi. Artık gerçek oluyor!",
+  "achievements": ["A Milli Takım Oyuncusu", "Süper Lig Yıldızı"],
+  "options": [
+    {
+      "text": "🇹🇷 Milli takımda başarılı ol ve Avrupa'ya git",
+      "effects": { "popularity": 25, "experience": 20 },
+      "nextScene": "scene10a"
+    },
+    {
+      "text": "🏆 Türkiye'de kalıp büyük kulüplere transfer ol",
+      "effects": { "popularity": 20, "mentality": 10 },
+      "nextScene": "scene8a"
+    }
+  ]
+},
+
+"scene9c": {
+  "title": "Takım Oyuncusu",
+  "text": "Gaziantep'te takım oyununa odaklandın ve harika bir sezon geçirdin. 30 maçta 7 gol, 16 asist ile ligin en çok asist yapan oyuncusu oldun. Barcelona ve Ajax scoutları seni izlemeye başladı.",
+  
+  "playerThoughts": "Gol atmak güzel ama takım arkadaşlarımı gole göndermek daha tatmin edici.",
+  "achievements": ["Asist Kralı", "Takımın Beyni"],
+  "options": [
+    {
+      "text": "🔴🔵 Barcelona'nın genç takımına git",
+      "effects": { "skill": 20, "experience": 25 },
+      "nextScene": "scene10b"
+    },
+    {
+      "text": "🇳🇱 Ajax'ın teklifini değerlendir",
+      "effects": { "skill": 18, "experience": 22 },
+      "nextScene": "scene10a"
+    }
+  ]
+},
+  
   "scene10a": {
     "title": "Ajax Serüveni",
     "text": "Amsterdam'a geldin ve Ajax'ın ünlü altyapı sistemine katıldın. İlk sezon zor geçti - dil problemi, kültür farkı ve Hollanda futbolunun farklı tarzı. Ama ikinci sezonun başında patladın! Şampiyonlar Ligi'nde Real Madrid'e karşı gol attın.",
@@ -537,7 +778,7 @@
   },
   "scene10c": {
     "title": "Avrupa Yolculuğu",
-    "text": "Galatasaray’daki başarılarının ardından Avrupa’dan teklif aldın. Milan, Monaco ve PSV seni istiyor. Yeni bir sayfa açmak için karar zamanı.",
+    "text": "Türkiye’deki başarılarının ardından Avrupa’dan teklif aldın. Milan, Monaco ve PSV seni istiyor. Yeni bir sayfa açmak için karar zamanı.",
 
     "playerThoughts": "Avrupa'da oynamak büyük bir adım. Doğru kulübü seçmeliyim.",
     "options": [
