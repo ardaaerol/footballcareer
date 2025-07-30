@@ -21,16 +21,6 @@ Then open your browser and go to: `http://localhost:8000`
 npx http-server
 ```
 
-## Troubleshooting
-
-### Console Errors
-- **404 Error**: Make sure you're running a local server. Don't open the HTML file directly in the browser.
-- **"data.forEach is not a function"**: This usually indicates a caching issue. Try:
-  1. Hard refresh (Ctrl+F5 or Cmd+Shift+R)
-  2. Clear browser cache
-  3. Open in incognito/private mode
-  4. Use the custom server.py which includes cache-busting headers
-
 ### Game Starts at Beginning Scene
 - The game is designed to start at scene1 by default
 - You can start from a specific scene by adding `?scene=sceneX` to the URL
