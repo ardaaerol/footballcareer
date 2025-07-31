@@ -17,7 +17,7 @@
       },
       {
         "text": "🎯 Soğukkanlı kalıp taktik zekamı kullanacağım",
-        "effects": { "skill": 3, "mentality": 5 },
+        "effects": { "skill": 5, "mentality": 5 },
         "nextScene": "scene2c"
       }
     ]
