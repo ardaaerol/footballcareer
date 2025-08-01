@@ -202,7 +202,7 @@
       },
       {
         "text": "🏠 Kartalspor'da kalmaya devam et",
-        "effects": { "mentality": 5 },
+        "effects": { "mentality": 15 },
         "nextScene": "scene4a"
       }
     ]
