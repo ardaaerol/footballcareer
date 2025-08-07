@@ -4,7 +4,7 @@ let currentSceneId = "scene1";
 let stats = {
     skill: 70,
     mentality: 75,
-    popularity: 50,
+    popularity: 60,
     age: 17,
     experience: 0,
     club: "Kartalspor U17"
